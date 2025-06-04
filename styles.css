@@ -1,0 +1,111 @@
+body {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+    text-align: center;
+    background-color: #ffeaf0;
+    margin: 0;
+    padding: 20px;
+    color: #5c4035;
+}
+
+.game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff8f9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #e91e63;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.stats {
+    font-size: 20px;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.cupcake-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.cupcake-btn:active {
+    transform: scale(0.95);
+}
+
+.cupcake-img {
+    width: 150px;
+    height: 150px;
+}
+
+.upgrades {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.upgrade-btn {
+    background-color: #ff9ab3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upgrade-btn:hover {
+    background-color: #ff7ca0;
+}
+
+.upgrade-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.upgrade-info {
+    text-align: left;
+}
+
+.upgrade-cost {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+
+.popup {
+    position: absolute;
+    font-weight: bold;
+    animation: float-up 1s forwards;
+    color: gold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+@keyframes float-up {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+}

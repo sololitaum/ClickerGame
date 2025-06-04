@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcake Tycoon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🧁 Cupcake Tycoon 🧁</h1>
+        
+        <div class="stats">
+            <div>Coins: <span id="coins">0</span></div>
+            <div>Cupcakes Per Click: <span id="cupcakes-per-click">1</span></div>
+            <div>Auto Bakers: <span id="auto-bakers">0</span> (Producing <span id="auto-production">0</span>/sec)</div>
+        </div>
+        
+        <button class="cupcake-btn" id="cupcake-btn">
+            <img src="cupcake1.jpg" alt="Cupcake" class="cupcake-img">
+        </button>
+        
+        <div class="upgrades">
+            
+            <button class="upgrade-btn" id="upgrade-click">
+                <span class="upgrade-info">Better Mixer<br><small>+1 coin per click</small></span>
+                <span class="upgrade-cost">10 coins</span>
+            </button>
+            
+            <button class="upgrade-btn" id="upgrade-auto">
+                <span class="upgrade-info">Hire Baker<br><small>+1 cupcake per second</small></span>
+                <span class="upgrade-cost">50 coins</span>
+            </button>
+            
+            <button class="upgrade-btn" id="upgrade-multiplier">
+                <span class="upgrade-info">Fancy Frosting<br><small>Double coin production</small></span>
+                <span class="upgrade-cost">100 coins</span>
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
